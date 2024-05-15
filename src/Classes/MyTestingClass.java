@@ -11,8 +11,10 @@ public class MyTestingClass {
     public int hashCode(){
         int hash = 1;
         for (int i = 0; i < name.length(); i++) {
-            hash = hash * 31 + (int) name.charAt(i);
+            hash = hash * 31 + (int) (name.charAt(i) - 'a' + 1);
+            //System.out.println("Debug hash is: " + hash);
         }
+        //System.out.println("Debug hash is: " + hash);
         return hash;
     }
 

@@ -50,6 +50,7 @@ public class MyHashTable<K, V> {
         HashNode<K, V> hashNode = findNodeKey(chainArray[index], key);
         if (hashNode != null){
             hashNode.value = value;
+            //System.out.println("Debug: Value got Overridden");
             return;
         }
         chainArray[index] = new HashNode<>(key, value, chainArray[index]);
@@ -123,5 +124,23 @@ public class MyHashTable<K, V> {
             }
         }
         return null;
+    }
+
+    public int getChainSize(int n){
+        HashNode<K, V> hashNode = chainArray[n];
+        int result = 0;
+        while (hashNode != null){
+            result++;
+            hashNode = hashNode.next;
+        }
+        return result;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public int getM(){
+        return M;
     }
 }
