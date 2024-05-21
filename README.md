@@ -1,8 +1,7 @@
 # Lab3
  Lab3 assignment for Algorithms and Data Structures course
 
- The task involved creating 2 basic List classes such as: MyArrayList and MyLinkedList which both implemented the given MyList interface
- The 2nd part of the task involved creating 3 more List classes that used previous to ease up the implementation 
+ The task involved creating Binary Search Tree and Hash Table classes and implementing them manually.
 
  # Included Classes:
   BST
